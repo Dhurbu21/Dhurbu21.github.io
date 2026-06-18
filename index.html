@@ -3,495 +3,123 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- ════════════════════════════════════════════════════════════════
-     EDIT ME: Update the title and meta below with your full name.
-     ════════════════════════════════════════════════════════════════ -->
-<title>Dharmendra [Last Name] — Program Evaluation & Evaluation Capacity Building</title>
-<meta name="description" content="Doctoral candidate in Agricultural Education and Communication at the University of Florida. Research on program evaluation, evaluation capacity building, and AI for evaluative thinking." />
-
+<title>Dharmendra Kalauni — Program Evaluation, Behavior Change & AI in Agricultural Education</title>
+<meta name="description" content="Dharmendra Kalauni — Ph.D. candidate in Agricultural Education and Communication at the University of Florida. Research on program evaluation, evaluation capacity building, behavior change, and AI/digital tools in Extension." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-<style>
-  :root{
-    --paper:    #F4F5EE;
-    --surface:  #FBFBF6;
-    --ink:      #1E3A2E;   /* deep pine */
-    --ink-soft: #45534A;   /* muted body */
-    --gold:     #A8721F;   /* antique gold accent */
-    --gold-tint:#EDE3CF;
-    --line:     #D8D9CC;
-    --line-soft:#E6E7DD;
-
-    --display: "Fraunces", Georgia, serif;
-    --body:    "Hanken Grotesk", system-ui, sans-serif;
-    --mono:    "IBM Plex Mono", ui-monospace, monospace;
-
-    --maxw: 1080px;
-    --gut: clamp(1.25rem, 5vw, 4rem);
-  }
-
-  *{ box-sizing:border-box; }
-  html{ scroll-behavior:smooth; }
-  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
-
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:var(--body);
-    font-size:17px;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
-  }
-
-  a{ color:inherit; }
-  img{ max-width:100%; display:block; }
-
-  .wrap{ max-width:var(--maxw); margin:0 auto; padding-left:var(--gut); padding-right:var(--gut); }
-
-  .eyebrow{
-    font-family:var(--mono);
-    font-size:.72rem;
-    letter-spacing:.18em;
-    text-transform:uppercase;
-    color:var(--gold);
-    margin:0 0 1.1rem;
-    display:flex; align-items:center; gap:.7rem;
-  }
-  .eyebrow::before{
-    content:""; width:1.6rem; height:1px; background:var(--gold); display:inline-block; flex:none;
-  }
-
-  /* ───────── NAV ───────── */
-  .nav{
-    position:sticky; top:0; z-index:50;
-    background:color-mix(in srgb, var(--paper) 88%, transparent);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line-soft);
-  }
-  .nav-inner{
-    max-width:var(--maxw); margin:0 auto; padding:.85rem var(--gut);
-    display:flex; align-items:center; justify-content:space-between; gap:1rem;
-  }
-  .brand{
-    font-family:var(--display); font-weight:600; font-size:1.15rem; letter-spacing:.01em;
-    text-decoration:none;
-  }
-  .brand .dot{ color:var(--gold); }
-  .nav-links{ display:flex; gap:1.6rem; }
-  .nav-links a{
-    font-family:var(--mono); font-size:.78rem; letter-spacing:.04em;
-    text-decoration:none; color:var(--ink-soft); transition:color .2s;
-  }
-  .nav-links a:hover{ color:var(--gold); }
-  @media (max-width:720px){ .nav-links{ display:none; } }
-
-  /* ───────── HERO ───────── */
-  .hero{ padding:clamp(3.5rem,9vw,7rem) 0 clamp(2.5rem,6vw,4.5rem); }
-  .hero h1{
-    font-family:var(--display);
-    font-weight:500;
-    font-size:clamp(2.7rem, 8.2vw, 5.4rem);
-    line-height:1.02;
-    letter-spacing:-0.015em;
-    margin:.2rem 0 1.4rem;
-  }
-  .hero h1 em{ font-style:italic; color:var(--gold); }
-  .lede{
-    font-size:clamp(1.1rem,2.4vw,1.4rem);
-    line-height:1.5;
-    color:var(--ink-soft);
-    max-width:40ch;
-    margin:0 0 2.2rem;
-  }
-  .facts{
-    display:flex; flex-wrap:wrap; gap:.6rem 1.5rem;
-    font-family:var(--mono); font-size:.78rem; color:var(--ink-soft);
-    padding-top:1.6rem; border-top:1px solid var(--line);
-  }
-  .facts span{ display:inline-flex; align-items:center; gap:.5rem; }
-  .facts span::before{ content:""; width:5px; height:5px; background:var(--gold); border-radius:50%; flex:none; }
-
-  .cta-row{ display:flex; flex-wrap:wrap; gap:.8rem; margin-bottom:2.4rem; }
-  .btn{
-    font-family:var(--mono); font-size:.8rem; letter-spacing:.03em;
-    text-decoration:none; padding:.7rem 1.3rem; border-radius:2px; transition:all .2s;
-    display:inline-flex; align-items:center; gap:.5rem;
-  }
-  .btn-solid{ background:var(--ink); color:var(--paper); }
-  .btn-solid:hover{ background:var(--gold); }
-  .btn-ghost{ border:1px solid var(--line); color:var(--ink); }
-  .btn-ghost:hover{ border-color:var(--gold); color:var(--gold); }
-
-  /* ───────── SECTIONS ───────── */
-  section{ padding:clamp(3rem,7vw,5.5rem) 0; border-top:1px solid var(--line-soft); }
-  .sec-head{ font-family:var(--display); font-weight:500; font-size:clamp(1.7rem,3.6vw,2.5rem); letter-spacing:-0.01em; margin:0 0 1.5rem; }
-  .lead-para{ font-size:1.12rem; max-width:62ch; color:var(--ink-soft); }
-  .lead-para strong{ color:var(--ink); font-weight:600; }
-
-  /* About grid */
-  .about-grid{ display:grid; grid-template-columns:1.5fr 1fr; gap:clamp(2rem,5vw,4rem); align-items:start; }
-  @media (max-width:760px){ .about-grid{ grid-template-columns:1fr; } }
-  .sidecard{
-    background:var(--surface); border:1px solid var(--line); border-radius:4px;
-    padding:1.6rem 1.5rem;
-  }
-  .sidecard h3{ font-family:var(--mono); font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin:0 0 1rem; font-weight:500; }
-  .sidecard dl{ margin:0; display:grid; gap:.85rem; }
-  .sidecard dt{ font-family:var(--mono); font-size:.7rem; letter-spacing:.05em; color:var(--ink-soft); text-transform:uppercase; }
-  .sidecard dd{ margin:.15rem 0 0; font-size:.96rem; }
-
-  /* ───────── SIGNATURE: mediation model ───────── */
-  .model-block{ margin-top:2.6rem; background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:clamp(1.5rem,4vw,2.6rem); }
-  .model-cap{ font-family:var(--mono); font-size:.72rem; letter-spacing:.08em; color:var(--ink-soft); margin:1.2rem 0 0; text-align:center; }
-  .model-cap b{ color:var(--gold); font-weight:500; }
-  .model svg{ width:100%; height:auto; max-width:760px; margin:0 auto; display:block; }
-  .node rect{ fill:var(--paper); stroke:var(--ink); stroke-width:1.5; }
-  .node.accent rect{ stroke:var(--gold); }
-  .node text{ font-family:var(--body); font-weight:600; fill:var(--ink); }
-  .node .sub{ font-family:var(--mono); font-weight:400; fill:var(--ink-soft); }
-  .edge{ stroke:var(--ink); stroke-width:1.6; fill:none; }
-  .edge.dash{ stroke:var(--gold); stroke-dasharray:5 4; }
-  .edge-label{ font-family:var(--mono); font-size:11px; fill:var(--ink-soft); }
-
-  /* ───────── RESEARCH AGENDA ───────── */
-  .arc{ display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-top:2.2rem; }
-  @media (max-width:820px){ .arc{ grid-template-columns:1fr 1fr; } }
-  @media (max-width:460px){ .arc{ grid-template-columns:1fr; } }
-  .study{ border:1px solid var(--line); border-radius:4px; padding:1.3rem 1.2rem; background:var(--surface); }
-  .study .num{ font-family:var(--mono); font-size:.72rem; color:var(--gold); letter-spacing:.06em; }
-  .study h4{ font-family:var(--display); font-weight:500; font-size:1.12rem; margin:.5rem 0 .4rem; }
-  .study p{ margin:0; font-size:.92rem; color:var(--ink-soft); line-height:1.5; }
-
-  /* ───────── PUBLICATIONS ───────── */
-  .pub-meta{ display:flex; flex-wrap:wrap; gap:1.5rem 2.5rem; margin:0 0 2rem; }
-  .stat{ }
-  .stat .n{ font-family:var(--display); font-weight:500; font-size:clamp(2rem,5vw,2.8rem); line-height:1; color:var(--ink); }
-  .stat .l{ font-family:var(--mono); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); margin-top:.4rem; }
-  .pub-list{ list-style:none; margin:0; padding:0; border-top:1px solid var(--line); }
-  .pub-list li{ padding:1.15rem 0; border-bottom:1px solid var(--line-soft); display:grid; grid-template-columns:auto 1fr; gap:1.2rem; }
-  .pub-list .yr{ font-family:var(--mono); font-size:.8rem; color:var(--gold); padding-top:.15rem; }
-  .pub-list .cite{ font-size:.98rem; line-height:1.55; }
-  .pub-list .cite em{ color:var(--ink-soft); }
-  .pub-list .venue{ font-family:var(--mono); font-size:.74rem; color:var(--ink-soft); display:block; margin-top:.3rem; }
-  .placeholder-note{ font-family:var(--mono); font-size:.72rem; color:var(--gold); background:var(--gold-tint); display:inline-block; padding:.15rem .5rem; border-radius:2px; }
-
-  /* ───────── AWARDS / TEACHING ───────── */
-  .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,5vw,3.5rem); }
-  @media (max-width:760px){ .two-col{ grid-template-columns:1fr; } }
-  .award-list{ list-style:none; margin:1rem 0 0; padding:0; }
-  .award-list li{ padding:.9rem 0; border-bottom:1px solid var(--line-soft); display:flex; gap:.9rem; }
-  .award-list .y{ font-family:var(--mono); font-size:.78rem; color:var(--gold); flex:none; width:3.5rem; padding-top:.1rem; }
-  .award-list .t{ font-size:.98rem; }
-
-  /* ───────── CONTACT (dark) ───────── */
-  .contact{ background:var(--ink); color:var(--paper); border-top:none; }
-  .contact .eyebrow{ color:var(--gold-tint); }
-  .contact .eyebrow::before{ background:var(--gold-tint); }
-  .contact h2{ font-family:var(--display); font-weight:500; font-size:clamp(1.9rem,5vw,3rem); margin:0 0 1rem; }
-  .contact p{ color:#C7CFC6; max-width:50ch; }
-  .contact a.mail{ font-family:var(--display); font-style:italic; font-size:clamp(1.3rem,3.5vw,2rem); color:var(--gold-tint); text-decoration:none; border-bottom:1px solid transparent; transition:border-color .2s; }
-  .contact a.mail:hover{ border-color:var(--gold-tint); }
-  .social{ display:flex; flex-wrap:wrap; gap:1.4rem; margin-top:2rem; }
-  .social a{ font-family:var(--mono); font-size:.8rem; letter-spacing:.04em; color:#C7CFC6; text-decoration:none; transition:color .2s; }
-  .social a:hover{ color:var(--gold-tint); }
-
-  footer{ background:var(--ink); color:#8FA095; font-family:var(--mono); font-size:.72rem; padding:1.5rem 0 2.5rem; }
-  footer .wrap{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:.6rem; }
-
-  /* ───────── reveal ───────── */
-  .reveal{ opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease; }
-  .reveal.in{ opacity:1; transform:none; }
-  @media (prefers-reduced-motion: reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
-
-  :focus-visible{ outline:2px solid var(--gold); outline-offset:3px; border-radius:2px; }
-</style>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- ═════════════════ NAV ═════════════════ -->
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="#top">Dharmendra<span class="dot">.</span></a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#contact">Contact</a>
-    </div>
+<nav class="nav"><div class="nav-inner">
+  <a class="brand" href="index.html">Dharmendra Kalauni<span class="dot">.</span></a>
+  <div class="nav-links">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="awards.html">Awards</a>
+    <a href="cv.pdf">CV</a>
   </div>
-</nav>
+</div></nav>
 
-<!-- ═════════════════ HERO ═════════════════ -->
-<header class="hero" id="top">
-  <div class="wrap">
-    <p class="eyebrow">Program Evaluation · Extension Education · Evaluative Thinking</p>
-    <h1>Dharmendra<br /><em>[Last Name]</em></h1>
-    <p class="lede">I study <strong>why</strong> evaluation takes root in organizations — and how individuals and institutions build the capacity to use it well.</p>
-    <div class="cta-row">
-      <!-- EDIT ME: point this at your hosted CV (e.g. cv.pdf in this repo) -->
-      <a class="btn btn-solid" href="cv.pdf">Curriculum Vitae →</a>
-      <a class="btn btn-ghost" href="#research">View research</a>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="headshot" id="headshot">
+      <!-- Add a headshot at images/profile.jpg; until then, initials show -->
+      <img src="images/profile.jpg" alt="Dharmendra Kalauni" onerror="this.closest('.headshot').classList.add('empty');this.remove();" />
     </div>
-    <div class="facts">
-      <span>Ph.D. Candidate, Agricultural Education &amp; Communication</span>
-      <span>University of Florida (IFAS)</span>
-      <span>Graduating Aug 2026</span>
-      <span>On the academic job market</span>
+    <div>
+      <p class="eyebrow">Program Evaluation · Behavior Change · AI in Agricultural Education</p>
+      <h1>Dharmendra <em>Kalauni</em></h1>
+      <p class="role">Ph.D. Candidate · Agricultural Education &amp; Communication · University of Florida</p>
+      <p class="lede">I study <strong>why</strong> evaluation takes root in organizations, and I build and rigorously test the <strong>digital and AI tools</strong> that strengthen Extension, education, and communication.</p>
+      <div class="cta-row">
+        <a class="btn btn-solid" href="research.html">Explore my research &rarr;</a>
+        <a class="btn btn-ghost-light" href="cv.pdf">Download CV</a>
+      </div>
     </div>
   </div>
 </header>
 
-<!-- ═════════════════ ABOUT ═════════════════ -->
-<section id="about">
+<!-- PORTFOLIO -->
+<section class="section">
   <div class="wrap">
-    <p class="eyebrow">About</p>
-    <div class="about-grid">
-      <div>
-        <h2 class="sec-head reveal">An evaluation methodologist working where behavioral science meets practice.</h2>
-        <p class="lead-para reveal">
-          I am a doctoral candidate in Agricultural Education and Communication at the University of Florida,
-          with a minor in Research and Evaluation Methodology. My work centers on
-          <strong>program evaluation</strong>, <strong>evaluation capacity building (ECB)</strong>, and the
-          human dimensions of behavior within Cooperative Extension.
-        </p>
-        <p class="lead-para reveal" style="margin-top:1.1rem;">
-          Methodologically, I work across advanced quantitative designs — structural equation modeling,
-          confirmatory factor analysis, hierarchical regression, propensity score methods, and quasi-experiments —
-          alongside qualitative and mixed-methods approaches. Increasingly, I am building an independent agenda
-          at the intersection of <strong>artificial intelligence and evaluative thinking</strong>: asking what it
-          means to reason evaluatively, and whether that capacity can be measured, benchmarked, and taught.
-        </p>
-        <p class="lead-para reveal" style="margin-top:1.1rem;">
-          Before my doctoral work, I served in government agricultural extension in Nepal — experience that keeps
-          me grounded in the gap between what research recommends and what practitioners can actually use.
-        </p>
-      </div>
-      <aside class="sidecard reveal">
-        <h3>At a glance</h3>
-        <dl>
-          <div><dt>Field</dt><dd>Agricultural Education &amp; Communication</dd></div>
-          <div><dt>Minor</dt><dd>Research &amp; Evaluation Methodology</dd></div>
-          <div><dt>Advisor</dt><dd>Dr. Walter Leite (UF)</dd></div>
-          <div><dt>Methods</dt><dd>SEM · CFA · HLR · PSM · Mixed methods</dd></div>
-          <div><dt>Tools</dt><dd>R · SPSS · Stata</dd></div>
-          <div><dt>Seeking</dt><dd>Tenure-track &amp; postdoctoral roles</dd></div>
-        </dl>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<!-- ═════════════════ RESEARCH ═════════════════ -->
-<section id="research">
-  <div class="wrap">
-    <p class="eyebrow">Research</p>
-    <h2 class="sec-head reveal">Building the capacity to evaluate — and to use what evaluation reveals.</h2>
+    <p class="eyebrow">Portfolio</p>
+    <h2 class="sec-head reveal">An evaluation methodologist working where behavioral science, computing, and practice meet.</h2>
     <p class="lead-para reveal">
-      My dissertation examines evaluation capacity building among Florida Cooperative Extension professionals
-      (n&nbsp;=&nbsp;143). A central finding: <strong>organizational ECB mediates the effect of individual ECB</strong>
-      on two practice outcomes — the use of evaluation results and the mainstreaming of evaluation into routine work.
-      Capacity, in other words, is not only a property of people; it lives in the structures around them.
+      I am a doctoral candidate at the University of Florida with a minor in Research and Evaluation Methodology,
+      completing my Ph.D. in August 2026. My work spans <strong>evaluation capacity building</strong>,
+      <strong>behavior change</strong>, and <strong>AI, machine learning, and NLP</strong> applied to agricultural
+      education, communication, leadership, and Extension. Before my doctoral studies, I served as a government
+      Agricultural Extension Officer in Nepal.
     </p>
 
-    <!-- SIGNATURE: the mediation model, true to the dissertation -->
-    <div class="model-block reveal">
-      <div class="model">
-        <svg viewBox="0 0 760 220" role="img" aria-label="Mediation model: individual ECB acts on organizational ECB, which in turn acts on evaluation use and mainstreaming. A direct path is also shown.">
-          <defs>
-            <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-              <path d="M0,0 L10,5 L0,10 z" fill="var(--ink)"></path>
-            </marker>
-            <marker id="arrowg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-              <path d="M0,0 L10,5 L0,10 z" fill="var(--gold)"></path>
-            </marker>
-          </defs>
-
-          <!-- edges -->
-          <path class="edge" d="M188,70 C235,70 235,70 272,70" marker-end="url(#arrow)"></path>
-          <path class="edge" d="M488,70 C535,70 535,70 572,70" marker-end="url(#arrow)"></path>
-          <path class="edge dash" d="M120,108 C120,180 640,180 640,108" marker-end="url(#arrowg)"></path>
-          <text class="edge-label" x="225" y="58" text-anchor="middle">a</text>
-          <text class="edge-label" x="525" y="58" text-anchor="middle">b</text>
-          <text class="edge-label" x="380" y="172" text-anchor="middle" fill="var(--gold)">direct (c′)</text>
-
-          <!-- nodes -->
-          <g class="node">
-            <rect x="20" y="42" width="168" height="56" rx="3"></rect>
-            <text x="104" y="68" text-anchor="middle" font-size="14">Individual ECB</text>
-            <text x="104" y="86" text-anchor="middle" font-size="10" class="sub">predictor</text>
-          </g>
-          <g class="node accent">
-            <rect x="272" y="42" width="216" height="56" rx="3"></rect>
-            <text x="380" y="68" text-anchor="middle" font-size="14">Organizational ECB</text>
-            <text x="380" y="86" text-anchor="middle" font-size="10" class="sub">mediator</text>
-          </g>
-          <g class="node">
-            <rect x="572" y="42" width="168" height="56" rx="3"></rect>
-            <text x="656" y="64" text-anchor="middle" font-size="13">Use &amp; Main-</text>
-            <text x="656" y="80" text-anchor="middle" font-size="13">streaming</text>
-            <text x="656" y="95" text-anchor="middle" font-size="9" class="sub">outcomes</text>
-          </g>
-        </svg>
-      </div>
-      <p class="model-cap">Dissertation structural model — <b>individual ECB → organizational ECB → evaluation use &amp; mainstreaming</b> (UF/IFAS, n = 143)</p>
+    <div class="stats reveal">
+      <div class="stat"><div class="n">20</div><div class="l">Peer-reviewed articles</div></div>
+      <div class="stat"><div class="n">12</div><div class="l">In Q1 &amp; Q2 journals</div></div>
+      <div class="stat"><div class="n">39</div><div class="l">Conference presentations</div></div>
+      <div class="stat"><div class="n">2026</div><div class="l">NACTA Teaching Award</div></div>
     </div>
 
-    <!-- Forward agenda -->
-    <h3 class="sec-head reveal" style="font-size:clamp(1.3rem,3vw,1.8rem); margin-top:3.2rem;">A program of work: can evaluative thinking be measured and taught — including in AI?</h3>
-    <div class="arc">
-      <div class="study reveal">
-        <span class="num">STUDY 01</span>
-        <h4>Conceptual</h4>
-        <p>A construct-attribution analysis of what "evaluative thinking" actually denotes across the literature.</p>
-      </div>
-      <div class="study reveal">
-        <span class="num">STUDY 02</span>
-        <h4>Instrument</h4>
-        <p>Developing and validating a measure of evaluative thinking suitable for research and practice.</p>
-      </div>
-      <div class="study reveal">
-        <span class="num">STUDY 03</span>
-        <h4>AI Benchmarking</h4>
-        <p>Benchmarking large language models against the same evaluative-reasoning criteria applied to people.</p>
-      </div>
-      <div class="study reveal">
-        <span class="num">STUDY 04</span>
-        <h4>Intervention</h4>
-        <p>An experimental test of whether evaluative thinking can be deliberately built through training.</p>
-      </div>
+    <div class="cards reveal">
+      <a class="card" href="research.html">
+        <span class="ix">01</span>
+        <h3>Research</h3>
+        <p>Evaluation capacity building, behavior change, and AI for evaluative thinking — including my dissertation model.</p>
+        <span class="go">Read more &rarr;</span>
+      </a>
+      <a class="card" href="publications.html">
+        <span class="ix">02</span>
+        <h3>Publications</h3>
+        <p>20 peer-reviewed journal articles, plus Extension publications and 39 conference presentations.</p>
+        <span class="go">See the list &rarr;</span>
+      </a>
+      <a class="card" href="teaching.html">
+        <span class="ix">03</span>
+        <h3>Teaching &amp; Experience</h3>
+        <p>A national teaching award, graduate instruction, and five years of applied research at UF/IFAS.</p>
+        <span class="go">Read more &rarr;</span>
+      </a>
+      <a class="card" href="awards.html">
+        <span class="ix">04</span>
+        <h3>Awards &amp; Recognition</h3>
+        <p>Teaching, poster, and abstract awards across national and international conferences.</p>
+        <span class="go">View awards &rarr;</span>
+      </a>
+      <a class="card" href="cv.pdf">
+        <span class="ix">05</span>
+        <h3>Curriculum Vitae</h3>
+        <p>The full record — education, methods, funding, service, and complete publication list.</p>
+        <span class="go">Download PDF &darr;</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ═════════════════ PUBLICATIONS ═════════════════ -->
-<section id="publications">
-  <div class="wrap">
-    <p class="eyebrow">Selected Publications</p>
-    <h2 class="sec-head reveal">Peer-reviewed scholarship.</h2>
-    <div class="pub-meta reveal">
-      <div class="stat"><div class="n">19+</div><div class="l">Peer-reviewed articles</div></div>
-      <div class="stat"><div class="n">SEM·CFA</div><div class="l">Quant methods core</div></div>
-      <div class="stat"><div class="n">Mixed</div><div class="l">Methods toolkit</div></div>
-    </div>
-
-    <p style="font-family:var(--mono); font-size:.78rem; color:var(--ink-soft); margin:.5rem 0 1.4rem;">
-      <span class="placeholder-note">EDIT ME</span>&nbsp; Replace the entries below with your real, formatted citations. The structure is ready — just swap the text.
-    </p>
-
-    <ul class="pub-list reveal">
-      <li>
-        <span class="yr">2026</span>
-        <div class="cite">
-          [Author list]. <em>Title of your evaluation capacity building article.</em>
-          <span class="venue">Journal name · vol(issue) · DOI</span>
-        </div>
-      </li>
-      <li>
-        <span class="yr">2026</span>
-        <div class="cite">
-          [Author list]. <em>Title of a methods or measurement paper.</em>
-          <span class="venue">Journal name · vol(issue) · DOI</span>
-        </div>
-      </li>
-      <li>
-        <span class="yr">2025</span>
-        <div class="cite">
-          [Author list]. <em>Title of an Extension education study.</em>
-          <span class="venue">Journal name · vol(issue) · DOI</span>
-        </div>
-      </li>
-      <li>
-        <span class="yr">2025</span>
-        <div class="cite">
-          [Author list]. <em>Title of a human-dimensions / behavior paper.</em>
-          <span class="venue">Journal name · vol(issue) · DOI</span>
-        </div>
-      </li>
-    </ul>
-    <p style="margin-top:1.5rem;">
-      <!-- EDIT ME: link to Google Scholar / ORCID / full CV -->
-      <a class="btn btn-ghost" href="#" >Full publication list (Google Scholar) →</a>
-    </p>
-  </div>
-</section>
-
-<!-- ═════════════════ TEACHING & RECOGNITION ═════════════════ -->
-<section id="teaching">
-  <div class="wrap">
-    <p class="eyebrow">Teaching &amp; Recognition</p>
-    <div class="two-col">
-      <div class="reveal">
-        <h2 class="sec-head" style="font-size:clamp(1.5rem,3.4vw,2.1rem);">Teaching</h2>
-        <p class="lead-para">
-          I teach with the same conviction that drives my research: that methodology is only valuable when people
-          can actually use it. My aim is to make evaluation and quantitative reasoning legible to students and
-          practitioners alike — recognized in 2026 with the <strong>NACTA Doctoral Student Teaching Award</strong>.
-        </p>
-        <!-- EDIT ME: add courses you've taught / TA'd -->
-        <p class="lead-para" style="margin-top:1rem;">
-          <span class="placeholder-note">EDIT ME</span> Add your courses, guest lectures, or teaching philosophy link here.
-        </p>
-      </div>
-      <div class="reveal">
-        <h2 class="sec-head" style="font-size:clamp(1.5rem,3.4vw,2.1rem);">Honors</h2>
-        <ul class="award-list">
-          <li><span class="y">2026</span><span class="t">NACTA Doctoral Student Teaching Award</span></li>
-          <li><span class="y">2026</span><span class="t">AAAE Conference — Top-10 Reviewer Recognition</span></li>
-          <li><span class="y">2026</span><span class="t">AAAE Conference — 2nd place, People's Choice (poster)</span></li>
-          <!-- EDIT ME: add more honors / grants / fellowships -->
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═════════════════ CONTACT ═════════════════ -->
-<section id="contact" class="contact">
-  <div class="wrap">
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
     <p class="eyebrow">Get in touch</p>
-    <h2>Let's talk about evaluation, capacity, or the road ahead.</h2>
-    <p>I'm currently on the academic job market for faculty and postdoctoral positions. I'd welcome
-       conversations with departments and teams working on evaluation, Extension, applied measurement,
-       or AI for evaluative reasoning.</p>
-    <p style="margin-top:1.6rem;">
-      <!-- EDIT ME: your real email -->
-      <a class="mail" href="mailto:your.email@ufl.edu">your.email@ufl.edu</a>
-    </p>
+    <h2>Let's talk about evaluation, capacity, or AI for evidence.</h2>
+    <p>I'm on the academic job market for faculty and postdoctoral positions, and I welcome conversations with teams working on evaluation, Extension, behavior change, applied measurement, or AI in agricultural education.</p>
+    <p style="margin-top:1.6rem;"><a class="mail" href="mailto:kalauni.dharmendra@gmail.com">kalauni.dharmendra@gmail.com</a></p>
     <div class="social">
-      <!-- EDIT ME: real links -->
-      <a href="#">Google Scholar ↗</a>
-      <a href="#">ORCID ↗</a>
-      <a href="#">LinkedIn ↗</a>
-      <a href="cv.pdf">Download CV ↓</a>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=44QvjcsAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar &#8599;</a>
+      <a href="https://orcid.org/0000-0001-8443-0101">ORCID &#8599;</a>
+      <a href="https://www.linkedin.com/in/dharmendra-kalauni-5b0ba9138/">LinkedIn &#8599;</a>
+      <a href="cv.pdf">Download CV &#8595;</a>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="wrap">
-    <span>© <span id="yr"></span> Dharmendra [Last Name]</span>
-    <span>Built with care · Hosted on GitHub Pages</span>
-  </div>
-</footer>
+<footer><div class="wrap">
+  <span>&copy; <span data-year></span> Dharmendra Kalauni · Gainesville, FL</span>
+  <span>kalauni.dharmendra@gmail.com</span>
+</div></footer>
 
-<script>
-  document.getElementById("yr").textContent = new Date().getFullYear();
-
-  // Scroll reveal — respects reduced motion
-  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if(!reduce && "IntersectionObserver" in window){
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
-    }, { threshold:0.12, rootMargin:"0px 0px -8% 0px" });
-    document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
-  } else {
-    document.querySelectorAll(".reveal").forEach(el=>el.classList.add("in"));
-  }
-</script>
+<script src="script.js"></script>
 </body>
 </html>
